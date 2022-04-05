@@ -6,8 +6,7 @@ app.get("/", (req, res) => {
 });
 
 app.get('/test', (req, res) => {
-    res.setHeader('Content-Type', 'application/json');
-    res.end({ msg: 'endpoint de prueba' });
+    res.send({ msg: 'endpoint de prueba' });
 });
 
 app.listen(5000, () => {
