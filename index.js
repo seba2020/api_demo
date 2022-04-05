@@ -3,7 +3,6 @@ const app = express();
 
 app.get('/test', (req, res) => {
     res.setHeader('Content-Type', 'application/json');
-    res.setHeader('Cache-Control', 's-max-age=1, stale-while-revalidate');
     res.end({ msg: 'endpoint de prueba'});
   });
 
